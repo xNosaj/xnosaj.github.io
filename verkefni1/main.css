@@ -1,0 +1,21 @@
+body {
+    font-family: sans-serif;
+    max-width: 50em;
+    border: 2px solid grey;  
+    padding: 2em;
+    margin: 2em auto; /* top+bottonm=2em Left+Right=Auto */
+}
+h1 {
+    color: green
+
+}
+.poem{
+    font-style: italic;
+    color: brown;
+}
+.poem strong{
+    color: red;
+}
+ul li {
+    color: green;
+}
