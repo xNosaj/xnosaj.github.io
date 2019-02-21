@@ -25,14 +25,14 @@ header {
 /* Grid area template */
 
 body {
-    background-color: white;
+    background-color:  grey;
     display: grid;
     grid-gap: 0;
     grid-template-areas:
-        "header"
         "topnav"
         "content"
-        "footer";
+        "footer"
+        "header";
     max-width: 60em;
     margin: 0 auto;
 }
@@ -42,9 +42,9 @@ body {
     display: grid;
     grid-gap: 1em;
     grid-template-areas: 
-        "arti arti aside"
-        "arti arti aside";
-    grid-template-columns: 1fr 1fr 1fr; 
+        "aside arti"
+        "aside arti";
+    grid-template-columns: 15em 1fr; 
 }
 
 .topmenu, footer {
@@ -57,3 +57,12 @@ body {
     padding: .5em
 }
 
+.aside {
+    color: rgb(218, 141, 0);
+    font-size: 4em;
+    text-align: center;
+    transform: rotate(45deg);
+    font-family: 'Permanent Marker', cursive; 
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgb(126, 39, 207);
+}
