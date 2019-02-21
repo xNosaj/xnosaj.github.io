@@ -38,9 +38,13 @@ body {
         "footer";
     max-width: 60em;
     margin: 0 auto;
+    background-image: url("bg.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .content {
     display: grid;
+    background-color: rgb(255, 253, 227);
     grid-gap: 1em;
     grid-template-areas: 
         "article aside1"
@@ -53,7 +57,8 @@ body {
     justify-content: space-around;
     border: 1px solid green;
     list-style-type: none;
-    padding: .5em
+    padding: .5em;
+    background-color: grey;
 }
 
 
