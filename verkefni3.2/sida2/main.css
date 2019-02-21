@@ -28,8 +28,8 @@ body {
     display: grid;
     grid-gap: 0;
     grid-template-areas:
-        "header"
         "topnav"
+        "header"
         "content"
         "footer";
     max-width: 60em;
@@ -40,6 +40,7 @@ body {
 
 .content {
     background-color: green;
+    border: 1px solid black;
     display: grid;
     grid-gap: 1em;
     grid-template-areas: 
@@ -56,7 +57,7 @@ body {
     justify-content: space-around;
     border: 1px solid black;
     list-style-type: none;
-    padding: .5em
+    padding: .5em;
 }
 
 .aside {
@@ -67,4 +68,15 @@ body {
     text-orientation: upright;
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: black;
+}
+
+h1 {
+    margin: 0 auto;
+    text-align: center;
+    font-family: 'Playball', cursive;
+    font-size: 3em;
+    color: white;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: grey;
+    text-decoration: underline;
 }
