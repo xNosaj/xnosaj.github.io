@@ -1,0 +1,22 @@
+* {
+    box-sizing: border-box;
+}
+.box {
+    width: 50%;
+    float: left;
+    border: 1px solid;
+    padding: 1em;
+}
+.bigL {
+    float: left;
+    font-size: 4em;
+    padding: 0 .3em;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+.imgR {
+    float: right;
+    width: 50%;
+}

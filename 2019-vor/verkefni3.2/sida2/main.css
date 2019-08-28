@@ -1,0 +1,82 @@
+* {
+    box-sizing: border-box;
+}
+
+/* Grid area */
+header {
+    grid-area: header;
+}
+.topnav {
+    grid-area: topnav;
+}
+.content {
+    grid-area: content;
+}
+
+/* Inní content */
+
+.arti {
+    grid-area: arti;
+}
+.aside {
+    grid-area: aside;
+}
+
+/* Grid area template */
+
+body {
+    display: grid;
+    grid-gap: 0;
+    grid-template-areas:
+        "topnav"
+        "header"
+        "content"
+        "footer";
+    max-width: 60em;
+    margin: 0 auto;
+    background-color: rgb(43, 43, 43);
+    background-image: url("snow.gif")
+}
+
+.content {
+    background-color: green;
+    border: 1px solid black;
+    display: grid;
+    grid-gap: 1em;
+    grid-template-areas: 
+        "aside arti arti"
+        "aside arti arti"
+        "aside arti arti";
+    grid-template-columns: 1fr 1fr 1fr; 
+}
+
+.topmenu, footer {
+    background-color: red;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    border: 1px solid black;
+    list-style-type: none;
+    padding: .5em;
+}
+
+.aside {
+    font-family: 'Luckiest Guy', cursive;
+    color: red;
+    font-size: 5em;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+}
+
+h1 {
+    margin: 0 auto;
+    text-align: center;
+    font-family: 'Playball', cursive;
+    font-size: 3em;
+    color: white;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: grey;
+    text-decoration: underline;
+}
